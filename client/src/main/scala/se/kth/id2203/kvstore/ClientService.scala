@@ -39,7 +39,7 @@ case class OpWithPromise(op: Operation, promise: Promise[OpResponse] = Promise()
 
 class ClientService extends ComponentDefinition {
 
-  //******* Ports ******
+
   val timer = requires[Timer];
   val net = requires[Network];
   //******* Fields ******
